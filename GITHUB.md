@@ -77,3 +77,33 @@ git stash pop
 ```
 git stash clear
 ```
+
+**IR PARA UM COMMIT ESPECIFICO**
+
+```
+git checkout hash_do_commit
+```
+
+**MOSTRAR A DIFERENCA ENTRE DOIS COMMITS**
+
+```
+git diff hash_de_um_commit..hash_de_outro_commit
+```
+
+**CRIANDO UMA TAG DE RELEASE**
+
+```
+git tag -a nome_da_tag -m "mensagem do lançamento da versao xpto"
+```
+
+**ENVIAR PARA O SERVIDOR REMOTO A TAG DE RELEASE**
+
+```
+git push origin nome_da_tag
+```
+
+**MOSTRANDO TAGS DE RELEASES**
+
+```
+git tag
+```
