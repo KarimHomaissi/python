@@ -4,7 +4,7 @@
 
 **Modelagem e Armazenamento (6h)**
 
-- [ ] Conceitos de armazenamento e serialização
+- [x] Conceitos de armazenamento e serialização
 - [ ] Modelagem dimensional I
 - [ ] Modelagem dimensional II
 
