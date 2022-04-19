@@ -19,7 +19,7 @@ idade2 = int("20")
 print(idade1 + idade2)
 ```
 
-> multiplicação com Python:
+**multiplicação com Python:**
 
 ```
 numero1 = 10
@@ -28,10 +28,9 @@ produto = numero1 * numero2
 print(produto)
 ```
 
-> O resultado nos surpreende:
+**O resultado nos surpreende:**
 
-`20202020202020202020`
+> 20202020202020202020
 
 > Não deu erro e sim imprimiu 10 vezes 20! Mas eu não acabei de falar que o Python é rígido e não converte automaticamente?
-
 > Falei e na verdade não aconteceu uma conversão automática/implícita. Trata-se apenas de um syntax sugar do mundo Python. Um syntax sugar, açúcar sintático da linguagem, apenas simplifica algo que seria trabalhoso, mas não muda a característica da linguagem. Então, ao invés de escrever dez vezes o número 20, podemos simplificar e escrever 10 \* "20". Tudo bem?
