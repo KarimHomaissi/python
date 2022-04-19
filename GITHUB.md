@@ -17,3 +17,9 @@ git reset HEAD nomedoarquivo
 ```
 git revert hash_do_commit
 ```
+
+**PARA ARQUIVAR ALTERAÇÕES PARA DEPOIS VOLTAR A TRABALHAR NELA**
+
+```
+git stash
+```
