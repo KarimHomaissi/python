@@ -5,8 +5,8 @@
 **Modelagem e Armazenamento (6h)**
 
 - [x] Conceitos de armazenamento e serialização
-- [ ] Modelagem dimensional I
-- [ ] Modelagem dimensional II
+- [x] Modelagem dimensional I
+- [x] Modelagem dimensional II
 
 **Python (60h)**
 
