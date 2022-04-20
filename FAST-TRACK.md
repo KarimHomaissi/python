@@ -10,7 +10,7 @@
 
 **Python (60h)**
 
-- [ ] Introdução ao Python
+- [x] Introdução ao Python
 - [ ] Introdução ao Python II
 - [ ] Introdução à Orientação a Objetos com Python
 - [ ] Manipulando Strings com Python
