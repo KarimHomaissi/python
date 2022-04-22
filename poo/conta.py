@@ -11,3 +11,5 @@ class Conta:
 
 conta = Conta(1,"Karim Homaissi",100.0,1000.0)
 conta2 = Conta(2,"Marco Antonio",55.0,1000.0)
+
+print(conta.titular,conta2.titular)
