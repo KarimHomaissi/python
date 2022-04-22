@@ -11,7 +11,7 @@
 **Python (60h)**
 
 - [x] Introdução ao Python
-- [ ] Introdução ao Python II
+- [x] Introdução ao Python II
 - [ ] Introdução à Orientação a Objetos com Python
 - [ ] Manipulando Strings com Python
 - [ ] Python Collections I
