@@ -14,7 +14,7 @@ print("banana".capitalize()) # funcao da classe str que coloca a 1 letra em maiu
 print("banana".upper()) # funcao da classe str que coloca todas letras em maiusculas
 print("BANANA".lower()) # funcao da classe str que coloca todas letras em minusculas
 print("algazarra".count("r")) # funcao da classe str que conta a frequencia com que aparece a letra r
-print("    alto    ".split()) # funcao da classe str que remove espaços em branco no inicio e fim
+print("    alto    ".strip()) # funcao da classe str que remove espaços em branco e caracteres especiais no inicio e fim
 tuplas = ("valores","imutaveis") # sequencia de valores imutaveis
 tuplas_dentro_de_listas = [("Karim",24),("João",20)] # define uma lista com tuplas dentro
 print(tuplas_dentro_de_listas[0][0]) # acessa a primeira tupla e acessa o primeiro elemento dela
