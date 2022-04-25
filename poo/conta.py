@@ -9,7 +9,7 @@ class Conta:
         self.__limite = limite
 
     def extrato(self):
-        print("Saldo: R$ {}".format(self.__saldo))
+        print("Saldo: R$ {}".format(self.get_saldo()))
 
     def depositar(self,valor):
         self.__saldo += valor
@@ -20,6 +20,18 @@ class Conta:
     def transferir(self,valor,destino):
         self.sacar(valor)
         destino.depositar(valor)
+
+    def get_saldo(self):
+        return self.__saldo
+
+    def get_titular(self):
+        return self.__titular
+
+    def get_limite(self):
+        return self.__limite
+
+    def set_limite(self, limite):
+        self.__limite = limite
 
 
 conta = Conta(1,"Karim Homaissi",100.0,1000.0)
