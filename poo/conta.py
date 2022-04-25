@@ -3,19 +3,19 @@ class Conta:
     
     def __init__(self, numero, titular, saldo, limite):
         print("Construindo o Objeto ... {}".format(self))
-        self.numero = numero
-        self.titular = titular
-        self.saldo = saldo
-        self.limite = limite
+        self.__numero = numero
+        self.__titular = titular
+        self.__saldo = saldo
+        self.__limite = limite
 
     def extrato(self):
-        print("Saldo: R$ {}".format(self.saldo))
+        print("Saldo: R$ {}".format(self.__saldo))
 
     def depositar(self,valor):
-        self.saldo += valor
+        self.__saldo += valor
     
     def sacar(self,valor):
-        self.saldo -= valor
+        self.__saldo -= valor
 
 
 conta = Conta(1,"Karim Homaissi",100.0,1000.0)
