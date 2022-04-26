@@ -1,6 +1,7 @@
 #!/bin/bash
 
-convert ~/Downloads/imagens-livros/$1.jpg ~/Downloads/imagens-livros/$1.png
+CAMINHO_IMAGENS = ~/Downloads/imagens-livros
+convert $CAMINHO_IMAGENS/$1.jpg $CAMINHO_IMAGENS/$1.png
 
 : '
   ~ = diretorio home
