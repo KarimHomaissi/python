@@ -40,6 +40,14 @@ class Conta:
     def set_limite(self, limite):
         self.__limite = limite
 
+    @staticmethod
+    def codigo_banco():
+        return "001"
+    
+    @staticmethod
+    def codigos_bancos():
+        return {'BB':'001', 'Caixa':'104', 'Bradesco':'237'}
+
 
 conta = Conta(1,"Karim Homaissi",100.0,1000.0)
 conta2 = Conta(2,"Marco Antonio",55.0,1000.0)
@@ -53,3 +61,5 @@ conta.extrato()
 conta.transferir(90,conta2)
 conta.extrato()
 conta2.extrato()
+print(Conta.codigo_banco())
+print(Conta.codigos_bancos()['Caixa'])
