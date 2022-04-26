@@ -15,7 +15,12 @@ converte_imagem() {
 }
 
 converte_imagem
-
+if [ $? -eq 0 ]
+then
+    echo "Conversao realizada com sucesso"
+else
+    echo "Houve uma falha no processo de conversao"
+fi
 
 : '
   ~ = diretorio home
