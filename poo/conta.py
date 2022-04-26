@@ -15,7 +15,10 @@ class Conta:
         self.__saldo += valor
     
     def sacar(self,valor):
-        self.__saldo -= valor
+        if(valor <= (self.__saldo + self.__limite)):
+            self.__saldo -= valor
+        else:
+            print("o valor R$ {} passou o limite.".format(valor))
     
     def transferir(self,valor,destino):
         self.sacar(valor)
