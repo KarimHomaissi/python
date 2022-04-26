@@ -2,7 +2,7 @@
 
 converte_imagem() {
     local caminho_imagem=$1
-    local imagem_sem_extensao=$(ls $caminho_imagem | awk -F. '{ print $1 }')
+    local imagem_sem_extensao=$(ls $caminho_imagem | awk -F.j '{ print $1 }')
     convert $imagem_sem_extensao.jpg $imagem_sem_extensao.png
 }
 
@@ -22,7 +22,7 @@ varrer_diretorio() {
 }
 
 varrer_diretorio ~/Downloads/imagens-novos-livros
-if [ $? -eq 0]
+if [ $? -eq 0 ]
 then
     echo "Conversao realizada com sucesso"
 else
