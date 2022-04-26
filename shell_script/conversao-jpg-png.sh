@@ -1,10 +1,10 @@
 #!/bin/bash
 
-CAMINHO_IMAGENS = ~/Downloads/imagens-livros
+cd ~/Downloads/imagens-livros
 
 for imagem in $@
 do
-    convert $CAMINHO_IMAGENS/$imagem.jpg $CAMINHO_IMAGENS/$imagem.png
+    convert $imagem.jpg $imagem.png
 done
 
 : '
