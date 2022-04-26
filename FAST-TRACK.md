@@ -12,7 +12,7 @@
 
 - [x] Introdução ao Python
 - [x] Introdução ao Python II
-- [ ] Introdução à Orientação a Objetos com Python
+- [x] Introdução à Orientação a Objetos com Python
 - [ ] Manipulando Strings com Python
 - [ ] Python Collections I
 - [ ] Python Collections II
