@@ -1,7 +1,7 @@
 #!/bin/bash
 
 converte_imagem() {
-    cd ~/Downloads/imagens-livros
+    cd ~/Downloads/imagens-livro
     if [ ! -d png ] 
     then
         mkdir png
@@ -14,7 +14,7 @@ converte_imagem() {
     done
 }
 
-converte_imagem
+converte_imagem 2>erros_conversao.txt
 if [ $? -eq 0 ]
 then
     echo "Conversao realizada com sucesso"
