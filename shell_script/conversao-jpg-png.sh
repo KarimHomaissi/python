@@ -1,6 +1,6 @@
 #!/bin/bash
 
-convert ~/Downloads/imagens-livros/asp_net.jpg ~/Downloads/imagens-livros/asp_net.png
+convert ~/Downloads/imagens-livros/$1.jpg ~/Downloads/imagens-livros/$1.png
 
 : '
   ~ = diretorio home
