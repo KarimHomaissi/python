@@ -4,7 +4,7 @@ cd ~/Downloads/imagens-livros
 
 for imagem in *.jpg
 do
-    convert $imagem.jpg $imagem.png
+    convert $imagem $imagem.png
 done
 
 : '
