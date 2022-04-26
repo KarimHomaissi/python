@@ -2,7 +2,7 @@
 
 cd ~/Downloads/imagens-livros
 
-for imagem in $@
+for imagem in *.jpg
 do
     convert $imagem.jpg $imagem.png
 done
