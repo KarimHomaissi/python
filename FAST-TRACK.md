@@ -20,7 +20,7 @@
 **Pipeline de Desenvolvimento (14h)**
 
 - [x] Introdução à Git
-- [ ] Introdução à Shell Script
+- [x] Introdução à Shell Script
 
 **Engenharia de Dados (8h)**
 
