@@ -46,7 +46,14 @@ class ExtratorURL:
     def __str__(self):
         return self.url + "\n" + "Parâmetros: " + self.get_url_parametros() + "\n" + "URL Base: " + self.get_url_base()
 
+    def __eq__(self, other):
+        return self.url == other.url
+        
+
 extrator_url = ExtratorURL("https://bytebank.com/cambio?moedaOrigem=real&moedaDestino=dolar&quantidade=100")
+extrator_url2 = ExtratorURL("https://bytebank.com/cambio?moedaOrigem=real&moedaDestino=dolar&quantidade=100")
+print("é Igual: {}".format(extrator_url == extrator_url2))
+print("Endereco da memoria do extrator_url: {}".format(id(extrator_url)))
 print("O tamanho da URL: {}".format(len(extrator_url))) # passando o objeto para o len , pois a classe implementa o metodo especial __len__
 print(extrator_url)
 valor_quantidade = extrator_url.get_valor_parametro("moedaOrigem")
