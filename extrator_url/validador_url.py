@@ -23,7 +23,7 @@ import re
 
 url = "https://www.bytebank.com.br/cambio"
 padrao_url = re.compile("(http(s)?://)?(www.)?bytebank.com(.br)?/cambio")
-match = padrao_url.match(url)
+match = padrao_url.match(url) # verifica se bate com a string inteira
 
 if not match:
     raise ValueError("A URL não é válida.")
