@@ -2,14 +2,14 @@ class Programa:
     def __init__(self, nome, ano):
         self._nome = nome.title()
         self.ano = ano
-        self._likes = 0
+        self._like = 0
 
     @property
-    def likes(self):
-        return self._likes
+    def like(self):
+        return self._like
 
-    def dar_likes(self):
-        self._likes += 1
+    def dar_like(self):
+        self._like += 1
 
     @property
     def nome(self):
@@ -20,7 +20,7 @@ class Programa:
         self._nome = nome
     
     def __str__(self):
-        return f'Nome: {self.nome} Likes: {self.likes}'
+        return f'Nome: {self.nome} Likes: {self.like}'
 
 class Filme(Programa):
     def __init__(self, nome, ano, duracao):
@@ -28,7 +28,7 @@ class Filme(Programa):
         self.duracao = duracao
     
     def __str__(self):
-        return f'Nome: {self.nome} - {self.duracao} min - Likes: {self.likes}'
+        return f'Nome: {self.nome} - {self.duracao} min - Likes: {self.like}'
 
 class Serie(Programa):
     def __init__(self, nome, ano, temporadas):
@@ -36,15 +36,12 @@ class Serie(Programa):
         self.temporadas = temporadas
 
     def __str__(self):
-        return f'Nome: {self.nome} - {self.temporadas} temporadas - Likes: {self.likes}'
+        return f'Nome: {self.nome} - {self.temporadas} temporadas - Likes: {self.like}'
 
-class Playlist:
+class Playlist(list):
     def __init__(self, nome, programas):
         self.nome = nome
-        self.programas = programas
-
-    def tamanho(self):
-        return len(self.programas)
+        super().__init__(programas)
 
 vingadores = Filme('vingadores - guerra infinita', 2018, 160)
 atlanta = Serie('atlanta', 2018, 2)
@@ -64,6 +61,8 @@ atlanta.dar_like()
 
 filmes_e_series = [vingadores, atlanta, demolidor, tmep]
 playlist_fim_de_semana = Playlist('fim de semana', filmes_e_series)
+
+print(f'Tamanho do playlist: {len(playlist_fim_de_semana)}')
 
 for programa in filmes_e_series:
     print(programa)
