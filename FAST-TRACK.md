@@ -48,7 +48,7 @@
 - [ ] Introdução à AWS
 - [ ] Introdução à D&A na AWS
 - [x] Overview do Data Lake em AWS
-- [ ] Storage em AWS
+- [x] Storage em AWS
 - [ ] Lab Storage
 - [ ] Hidratação do Data Lake I
 - [ ] Hidratação do Data Lake II
