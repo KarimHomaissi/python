@@ -45,7 +45,7 @@
 
 **Foco em AWS (34h)**
 
-- [ ] Introdução à AWS
+- [x] Introdução à AWS
 - [ ] Introdução à D&A na AWS
 - [x] Overview do Data Lake em AWS
 - [x] Storage em AWS
