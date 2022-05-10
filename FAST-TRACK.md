@@ -25,7 +25,7 @@
 **Engenharia de Dados (8h)**
 
 - [x] Introdução a HDFS
-- [ ] Introdução ao Apache Hive
+- [x] Introdução ao Apache Hive
 - [ ] Introdução ao Apache Spark
 - [ ] Desafios Apache Spark
 - [ ] Lab I
